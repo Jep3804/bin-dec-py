@@ -4,6 +4,7 @@
 import os
 import time
 
+
 def binaryToDecimal(binary):
     if binary == "":
         raise ValueError("INVALID INPUT DETECTED")
@@ -124,8 +125,8 @@ while(True):
     print("------------ THE BINARY DECIMAL TWO-WAY CONVERTER ----------------")
     print("\n")
     print("Choose one of these 4 options:")
-    decision = input("Enter 1 for Binary-to-Decimal:\nEnter 2 for Decimal-to-Binary:\nEnter 3 for Ones' Complement of Binary String\nEnter 4 for Two's Complement of Binary String\n")
-    print("\n")
+    decision = input("Enter 1 for Binary-to-Decimal:\nEnter 2 for Decimal-to-Binary:\nEnter 3 for Ones' Complement of Binary String:\nEnter 4 for Two's Complement of Binary String:\n\nYour option: ")
+
     os.system("cls" if os.name == 'nt' else "clear")
     run_converter(int(decision))
     zero = int(input("Type 0 if you want to end the program (Type 1 if you still want to play): "))
